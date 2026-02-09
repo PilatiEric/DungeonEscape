@@ -1,0 +1,14 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/NewMap.umap",
+				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/MainLevel.umap",
+				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/TestLevel.umap"
+			]
+		}
+	]
+}
