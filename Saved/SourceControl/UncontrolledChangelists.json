@@ -8,7 +8,9 @@
 				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/NewMap.umap",
 				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/MainLevel.umap",
 				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/TestLevel.umap",
-				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/StarterContent/Architecture/Floor_400x400.uasset"
+				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/BP_Player.uasset",
+				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/FirstPerson/Blueprints/BP_FirstPersonGameMode.uasset"
 			]
 		}
 	]
