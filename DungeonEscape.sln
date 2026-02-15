@@ -1,3 +1,4 @@
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31314.256
@@ -7,9 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{233774A8-CC9D-3FA9-86D1-90573E92B704}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{DE1F8B53-6C02-3C13-9101-A7C8D96F3FF6}"
-	ProjectSection(SolutionItems) = preProject
-		Directory.Build.props = Directory.Build.props
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Programs", "Programs", "{A338B9E2-A559-34BE-A46D-F789DD488FAD}"
 EndProject
@@ -130,12 +128,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE5Rules", "..\..\..\..\..\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{1CCEC849-CC72-4C59-8C36-2F7C38706D4C}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\..\Program Files\Epic Games\UE_5.6\Engine\Extras\VisualStudioDebugging\Unreal.natjmc = ..\..\..\..\..\..\Program Files\Epic Games\UE_5.6\Engine\Extras\VisualStudioDebugging\Unreal.natjmc
-		..\..\..\..\..\..\Program Files\Epic Games\UE_5.6\Engine\Extras\VisualStudioDebugging\Unreal.natstepfilter = ..\..\..\..\..\..\Program Files\Epic Games\UE_5.6\Engine\Extras\VisualStudioDebugging\Unreal.natstepfilter
 		..\..\..\..\..\..\Program Files\Epic Games\UE_5.6\Engine\Extras\VisualStudioDebugging\Unreal.natvis = ..\..\..\..\..\..\Program Files\Epic Games\UE_5.6\Engine\Extras\VisualStudioDebugging\Unreal.natvis
+		..\..\..\..\..\..\Program Files\Epic Games\UE_5.6\Engine\Extras\VisualStudioDebugging\Unreal.natstepfilter = ..\..\..\..\..\..\Program Files\Epic Games\UE_5.6\Engine\Extras\VisualStudioDebugging\Unreal.natstepfilter
+		..\..\..\..\..\..\Program Files\Epic Games\UE_5.6\Engine\Extras\VisualStudioDebugging\Unreal.natjmc = ..\..\..\..\..\..\Program Files\Epic Games\UE_5.6\Engine\Extras\VisualStudioDebugging\Unreal.natjmc
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -154,6 +150,10 @@ Global
 		Shipping|Win64 = Shipping|Win64
 		Shipping|Win64-arm64 = Shipping|Win64-arm64
 		Shipping|Win64-arm64ec = Shipping|Win64-arm64ec
+	EndGlobalSection
+	# UnrealVS Section
+	GlobalSection(ddbf523f-7eb6-4887-bd51-85a714ff87eb) = preSolution
+		AvailablePlatforms=Win64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F57DA7F5-5AFA-3187-BBB7-9EE329964F20}.DebugGame Editor|Win64.ActiveCfg = DebugGame_Editor|x64
@@ -1736,13 +1736,13 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0BFBE63A-B98A-3411-8EEB-8918FEC737B3} = {A338B9E2-A559-34BE-A46D-F789DD488FAD}
-		{57713676-9DBE-331C-AD10-26632AC9EE0C} = {A338B9E2-A559-34BE-A46D-F789DD488FAD}
-		{7B5CFB44-F0FB-31DF-AE62-C3C096A29A7B} = {A338B9E2-A559-34BE-A46D-F789DD488FAD}
-		{F57DA7F5-5AFA-3187-BBB7-9EE329964F20} = {DE1F8B53-6C02-3C13-9101-A7C8D96F3FF6}
 		{29972D93-D6F8-3BE2-BA0E-4A8B979AA1A7} = {233774A8-CC9D-3FA9-86D1-90573E92B704}
+		{F57DA7F5-5AFA-3187-BBB7-9EE329964F20} = {DE1F8B53-6C02-3C13-9101-A7C8D96F3FF6}
 		{5638CF39-EF68-3F96-A443-ACCE2F17CEFE} = {A338B9E2-A559-34BE-A46D-F789DD488FAD}
 		{7660338B-EC19-3896-B7B1-D0223063AE7F} = {A338B9E2-A559-34BE-A46D-F789DD488FAD}
+		{0BFBE63A-B98A-3411-8EEB-8918FEC737B3} = {A338B9E2-A559-34BE-A46D-F789DD488FAD}
+		{7B5CFB44-F0FB-31DF-AE62-C3C096A29A7B} = {A338B9E2-A559-34BE-A46D-F789DD488FAD}
+		{57713676-9DBE-331C-AD10-26632AC9EE0C} = {A338B9E2-A559-34BE-A46D-F789DD488FAD}
 		{0DD6C9A5-8C61-39B3-9A0B-429A2F8916E0} = {0BFBE63A-B98A-3411-8EEB-8918FEC737B3}
 		{CEE38039-25B4-3FC0-A946-66DC37A3BBB0} = {0BFBE63A-B98A-3411-8EEB-8918FEC737B3}
 		{C34D0539-C821-347A-8087-009C5C8A927F} = {0BFBE63A-B98A-3411-8EEB-8918FEC737B3}
@@ -1792,11 +1792,5 @@ Global
 		{E0011967-D602-3634-A39B-16D003DEB030} = {C2F57ECE-B26F-39D8-BDA7-C1D40BD8F180}
 		{7C776D27-A8F3-36B4-A1A4-3013B4283AE0} = {C2F57ECE-B26F-39D8-BDA7-C1D40BD8F180}
 		{21C811DF-B922-3D89-AE99-0E61D87226E5} = {C2F57ECE-B26F-39D8-BDA7-C1D40BD8F180}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2A8B5B20-33FF-474E-ACC4-E2FE63BDA545}
-	EndGlobalSection
-	GlobalSection(ddbf523f-7eb6-4887-bd51-85a714ff87eb) = preSolution
-		AvailablePlatforms = Win64
 	EndGlobalSection
 EndGlobal
