@@ -19,8 +19,31 @@ void UMover::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
+	float MyFloat = 10.f;
+	float* PointerToMyFloat = &MyFloat;
+
+	float Result = *PointerToMyFloat + 5.f; //15.f
+
+	UE_LOG(LogTemp, Display, TEXT("Result: %f"), Result);
 	
+
+	*PointerToMyFloat = 30.f;
+	UE_LOG(LogTemp, Display, TEXT("MyFloat: %f"), MyFloat);
+	UE_LOG(LogTemp, Display, TEXT("*PointerToMyFloat: %f"), *PointerToMyFloat);
+	UE_LOG(LogTemp, Display, TEXT("PointerToMyFloat: %p"), PointerToMyFloat);
+
+
+
+	FVector MyVector = FVector(1.f, 1.f, 1.f);
+
+	FVector* PointerToMyVector = &MyVector;
+
+	PointerToMyVector -> X = 2.f;
+	PointerToMyVector -> Y = 2.f;
+	PointerToMyVector -> Z = 2.f;
+
+	FString MyVectorString = MyVector.ToCompactString();
+	UE_LOG(LogTemp, Display, TEXT("PointerToMyFloat: %s"), *MyVectorString);
 }
 
 
@@ -29,6 +52,6 @@ void UMover::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponent
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	UE_LOG(LogTemp, Display, TEXT("Mover is ticking..."))
+	
 }
 
