@@ -33,6 +33,10 @@ public:
 	UPROPERTY(EditAnywhere)
 	bool ShouldMove = false;
 
+	UPROPERTY(VisibleAnywhere)
+	bool ReachedTarget = false;
+
 	FVector TargetLocation;
 	FVector StartLocation;
+
 };
