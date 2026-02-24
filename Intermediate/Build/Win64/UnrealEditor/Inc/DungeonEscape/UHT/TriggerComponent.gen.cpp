@@ -14,6 +14,7 @@ void EmptyLinkFunctionForGeneratedCodeTriggerComponent() {}
 // ********** Begin Cross Module References ********************************************************
 DUNGEONESCAPE_API UClass* Z_Construct_UClass_UTriggerComponent();
 DUNGEONESCAPE_API UClass* Z_Construct_UClass_UTriggerComponent_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UBoxComponent();
 UPackage* Z_Construct_UPackage__Script_DungeonEscape();
 // ********** End Cross Module References **********************************************************
@@ -64,13 +65,24 @@ struct Z_Construct_UClass_UTriggerComponent_Statics
 		{ "IncludePath", "TriggerComponent.h" },
 		{ "ModuleRelativePath", "TriggerComponent.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MoverActor_MetaData[] = {
+		{ "Category", "TriggerComponent" },
+		{ "ModuleRelativePath", "TriggerComponent.h" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoverActor;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UTriggerComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTriggerComponent_Statics::NewProp_MoverActor = { "MoverActor", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTriggerComponent, MoverActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoverActor_MetaData), NewProp_MoverActor_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTriggerComponent_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTriggerComponent_Statics::NewProp_MoverActor,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UTriggerComponent_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UTriggerComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBoxComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_DungeonEscape,
@@ -82,11 +94,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UTriggerComponent_Stati
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	nullptr,
-	nullptr,
+	Z_Construct_UClass_UTriggerComponent_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_UTriggerComponent_Statics::PropPointers),
 	0,
 	0x00B010A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UTriggerComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UTriggerComponent_Statics::Class_MetaDataParams)
@@ -107,10 +119,10 @@ UTriggerComponent::~UTriggerComponent() {}
 struct Z_CompiledInDeferFile_FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h__Script_DungeonEscape_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTriggerComponent, UTriggerComponent::StaticClass, TEXT("UTriggerComponent"), &Z_Registration_Info_UClass_UTriggerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTriggerComponent), 1170854798U) },
+		{ Z_Construct_UClass_UTriggerComponent, UTriggerComponent::StaticClass, TEXT("UTriggerComponent"), &Z_Registration_Info_UClass_UTriggerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTriggerComponent), 668434487U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h__Script_DungeonEscape_3019972219(TEXT("/Script/DungeonEscape"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h__Script_DungeonEscape_1001647780(TEXT("/Script/DungeonEscape"),
 	Z_CompiledInDeferFile_FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h__Script_DungeonEscape_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h__Script_DungeonEscape_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
