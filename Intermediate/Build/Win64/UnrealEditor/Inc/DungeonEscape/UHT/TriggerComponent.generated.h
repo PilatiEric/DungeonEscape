@@ -16,10 +16,19 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
+
 // ********** Begin Class UTriggerComponent ********************************************************
+#define FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnOverlapEnd); \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
 DUNGEONESCAPE_API UClass* Z_Construct_UClass_UTriggerComponent_NoRegister();
 
-#define FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUTriggerComponent(); \
 	friend struct Z_Construct_UClass_UTriggerComponent_Statics; \
@@ -30,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(UTriggerComponent)
 
 
-#define FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UTriggerComponent(UTriggerComponent&&) = delete; \
 	UTriggerComponent(const UTriggerComponent&) = delete; \
@@ -40,12 +49,13 @@ public: \
 	NO_API virtual ~UTriggerComponent();
 
 
-#define FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_12_PROLOG
-#define FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_15_GENERATED_BODY \
+#define FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_13_PROLOG
+#define FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_15_INCLASS_NO_PURE_DECLS \
-	FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_15_ENHANCED_CONSTRUCTORS \
+	FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_16_INCLASS_NO_PURE_DECLS \
+	FID_game_dev_unreal_CppCourseProjects_UnrealLessons_3_Dungeon_Escape_DungeonEscape_Source_DungeonEscape_TriggerComponent_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
