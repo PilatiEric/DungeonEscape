@@ -1,27 +1,28 @@
 // Fill out your copyright notice in the Description page of Project Settings.
+/*
+	WHAT DO DO FOR A TRIGGER COMPONENT YOU CREATE IN UNREAL EDITOR FOR IT TO WORK
+	- In the trigger's details panel
+*/
 
 
 #include "TriggerComponent.h"
 
 UTriggerComponent::UTriggerComponent()
 {
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-
-	UE_LOG(LogTemp, Display, TEXT("Trigger Component Created"));
 
 }
 
 void UTriggerComponent::BeginPlay()
 {
 	Super::BeginPlay();
+
 	if (MoverActor) // MoverActor != nullptr
 	{
 		Mover = MoverActor->FindComponentByClass<UMover>();
 		if (Mover) // Mover != nullptr
 		{
-			UE_LOG(LogTemp, Display, TEXT("Successfully found mover component!"));			
+			UE_LOG(LogTemp, Display, TEXT("Succesfully found the mover component!"));
 		}
 		else
 		{
@@ -43,20 +44,43 @@ void UTriggerComponent::BeginPlay()
 void UTriggerComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+}
+
+void UTriggerComponent::Trigger(bool NewTriggerValue)
+{
+	IsTriggered = NewTriggerValue;
+
+	if (Mover)
+	{
+		Mover->ShouldMove = NewTriggerValue;
+	}
+	else
+	{
+		UE_LOG(LogTemp, Display, TEXT("%s doesn't have a mover to trigger!"), *GetOwner()->GetActorNameOrLabel());
+	}
 }
 
 void UTriggerComponent::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (Mover)
+	if (OtherActor && OtherActor->ActorHasTag("PressurePlateActivator"))
 	{
-		Mover->ShouldMove = true;
+		if (!IsTriggered)
+		{
+			Trigger(true);
+		}
 	}
 }
 
 void UTriggerComponent::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	if (Mover)
+	if (OtherActor && OtherActor->ActorHasTag("PressurePlateActivator"))
 	{
-		Mover->ShouldMove = false;
+		if (IsTriggered)
+		{
+			Trigger(false);
+		}
 	}
 }
+
+

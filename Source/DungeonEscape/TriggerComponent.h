@@ -36,6 +36,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	bool IsPressurePlate = false;
 
+	UPROPERTY(VisibleAnywhere)
+	bool IsTriggered = false;
+
 
 	/** called when something enters the sphere component */
 	UFUNCTION()
@@ -44,4 +47,6 @@ public:
 	/** called when something leaves the sphere component */
 	UFUNCTION()
 	void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
+	void Trigger(bool NewTriggerValue);
 };
