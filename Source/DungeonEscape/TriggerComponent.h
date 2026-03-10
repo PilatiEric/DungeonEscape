@@ -39,6 +39,9 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	bool IsTriggered = false;
 
+	UPROPERTY(VisibleAnywhere)
+	int32 ActivatorCount;
+
 
 	/** called when something enters the sphere component */
 	UFUNCTION()

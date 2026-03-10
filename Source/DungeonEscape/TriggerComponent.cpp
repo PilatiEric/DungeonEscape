@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 /*
-	WHAT DO DO FOR A TRIGGER COMPONENT YOU CREATE IN UNREAL EDITOR FOR IT TO WORK
+	WHAT TO DO FOR A TRIGGER COMPONENT YOU CREATE IN UNREAL EDITOR FOR IT TO WORK
 	- In the trigger's details panel
 */
 
@@ -53,7 +53,7 @@ void UTriggerComponent::Trigger(bool NewTriggerValue)
 
 	if (Mover)
 	{
-		Mover->ShouldMove = NewTriggerValue;
+		Mover->SetShouldMove(IsTriggered);
 	}
 	else
 	{
@@ -63,24 +63,30 @@ void UTriggerComponent::Trigger(bool NewTriggerValue)
 
 void UTriggerComponent::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if (OtherActor && OtherActor->ActorHasTag("PressurePlateActivator"))
-	{
+	/*if (OtherActor && OtherActor->ActorHasTag("PressurePlateActivator"))
+	{*/
+	UE_LOG(LogTemp, Display, TEXT("Trigger Called!"));
+
+		ActivatorCount++;
+
 		if (!IsTriggered)
 		{
 			Trigger(true);
 		}
-	}
+	//}
 }
 
 void UTriggerComponent::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	if (OtherActor && OtherActor->ActorHasTag("PressurePlateActivator"))
-	{
-		if (IsTriggered)
+	/*if (OtherActor && OtherActor->ActorHasTag("PressurePlateActivator"))
+	{*/
+		ActivatorCount--;
+
+		if (IsTriggered && ActivatorCount < 1)
 		{
 			Trigger(false);
 		}
-	}
+	//}
 }
 
 
