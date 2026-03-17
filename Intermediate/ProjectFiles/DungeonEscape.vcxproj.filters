@@ -75,6 +75,12 @@
     <ClInclude Include="..\..\Source\DungeonEscape\DungeonEscapePlayerController.h">
       <Filter>Source\DungeonEscape</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\DungeonEscape\Lock.cpp">
+      <Filter>Source\DungeonEscape</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DungeonEscape\Lock.h">
+      <Filter>Source\DungeonEscape</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\DungeonEscape\Mover.cpp">
       <Filter>Source\DungeonEscape</Filter>
     </ClCompile>

@@ -29,13 +29,13 @@ void EmptyLinkFunctionForGeneratedCodeDungeonEscape_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xC46B6762,
-				0x6E6A5D1D,
+				0xD55FF663,
+				0x0CACF9CD,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_DungeonEscape.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_DungeonEscape.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_DungeonEscape(Z_Construct_UPackage__Script_DungeonEscape, TEXT("/Script/DungeonEscape"), Z_Registration_Info_UPackage__Script_DungeonEscape, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xC46B6762, 0x6E6A5D1D));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_DungeonEscape(Z_Construct_UPackage__Script_DungeonEscape, TEXT("/Script/DungeonEscape"), Z_Registration_Info_UPackage__Script_DungeonEscape, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xD55FF663, 0x0CACF9CD));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
