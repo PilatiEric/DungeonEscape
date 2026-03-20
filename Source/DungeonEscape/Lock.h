@@ -35,4 +35,16 @@ public:
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* KeyItemMesh;
 
+	UPROPERTY(EditAnywhere)
+	FString KeyItemName;
+
+private:
+	UPROPERTY(VisibleAnywhere)
+	bool IsKeyPlaced;
+
+public:
+	bool GetIsKeyPlace();
+
+	void SetIsKeyPlaced(bool NewIsKeyPlaced);
+
 };
