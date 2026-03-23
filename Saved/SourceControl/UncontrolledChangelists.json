@@ -13,7 +13,9 @@
 				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/FirstPerson/Blueprints/BP_FirstPersonGameMode.uasset",
 				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/BP_PressurePlate.uasset",
 				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/BP_GlassStatue.uasset",
-				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/BP_TestDoorLock.uasset"
+				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/MyStuff/BP_TestDoorLock.uasset",
+				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/Input/IMC_Default.uasset",
+				"C:/game_dev/unreal/CppCourseProjects/UnrealLessons/3_Dungeon_Escape/DungeonEscape/Content/Input/Actions/IA_Interact.uasset"
 			]
 		}
 	]

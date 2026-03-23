@@ -34,20 +34,24 @@ class ADungeonEscapeCharacter : public ACharacter
 protected:
 
 	/** Jump Input Action */
-	UPROPERTY(EditAnywhere, Category ="Input")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category ="Input")
 	UInputAction* JumpAction;
 
 	/** Move Input Action */
-	UPROPERTY(EditAnywhere, Category ="Input")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category ="Input")
 	UInputAction* MoveAction;
 
 	/** Look Input Action */
-	UPROPERTY(EditAnywhere, Category ="Input")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category ="Input")
 	class UInputAction* LookAction;
 
 	/** Mouse Look Input Action */
-	UPROPERTY(EditAnywhere, Category ="Input")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category ="Input")
 	class UInputAction* MouseLookAction;
+
+	/** Interact Input Action*/
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category ="Input")
+	class UInputAction* InteractAction;
 	
 public:
 	ADungeonEscapeCharacter();
@@ -90,5 +94,6 @@ public:
 	/** Returns first person camera component **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+	void Interact();
 };
 
